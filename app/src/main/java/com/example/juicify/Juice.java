@@ -24,14 +24,8 @@ public class Juice {
     }
 
     public static final Juice[] mySongs = {
-            new Juice("Diners", "WOD", R.drawable.WOD),
-            new Juice( "Cha-Ching", "DRFL", R.drawable.DRFL),
-            new Juice("Diners", "WOD", R.drawable.WOD),
-            new Juice("Diners", "WOD", R.drawable.WOD),
-            new Juice("Diners", "WOD", R.drawable.WOD),
-            new Juice("Diners", "WOD", R.drawable.WOD),
-            new Juice("Diners", "WOD", R.drawable.WOD),
-            new Juice("Diners", "WOD", R.drawable.WOD),
+            new Juice("Diners", "WOD", R.drawable.wod),
+            new Juice( "Cha-Ching", "DRFL", R.drawable.drfl),
 
     };
 
@@ -40,14 +34,6 @@ public class Juice {
     // printed this allows us to define what info we want to see when the var
     // is printed
 
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public String getSong() {
         return song;
