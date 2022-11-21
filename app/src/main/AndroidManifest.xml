@@ -14,18 +14,18 @@
         android:theme="@style/Theme.Juicify"
         tools:targetApi="31">
         <activity
+            android:name=".Songs"
+            android:exported="false" />
+        <activity
+            android:name=".Unreleased"
+            android:exported="false" />
+        <activity
             android:name=".FirebaseHelper"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity
-            android:name=".UnrealeasedJuice"
-            android:exported="false" />
-        <activity
-            android:name=".RealeasedJuice"
-            android:exported="false" />
         <activity
             android:name=".Options"
             android:exported="false" />

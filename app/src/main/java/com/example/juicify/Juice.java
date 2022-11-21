@@ -1,15 +1,54 @@
 package com.example.juicify;
 
-public class Juice {
+import android.os.Parcel;
+import android.os.Parcelable;
+
+public class Juice implements Parcelable {
     private String song;
     private String era;
     private int imageResourceID;
 
-   /*
-   To auto generate code, go on the top menu to Code - Generate and select
-   what you want   Make sure your cursor is positioned where you want the code
-   to be inserted.
-    */
+    public static final Parcelable.Creator<Juice> CREATOR = new
+            Parcelable.Creator<Juice>() {
+
+                @Override
+                public Juice createFromParcel(Parcel parcel) {
+                    return new Juice(parcel);
+                }
+
+                @Override
+                public Juice[] newArray(int size) {
+                    return new Juice[0];
+                }
+            };
+
+    public Juice(Parcel parcel) {
+        song = parcel.readString();
+        era = parcel.readString();
+        imageResourceID = parcel.readInt();
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(song);
+        dest.writeString(era);
+        dest.writeInt(imageResourceID);
+    }
+
+    public Juice() {
+        song = "";
+        era = "";
+        imageResourceID = 0;
+    }
+
+    public String toString() {
+        return this.song;
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
 
     public Juice(String song, String era, int imageResourceID) {
         this.song = song;
@@ -23,11 +62,29 @@ public class Juice {
         this.imageResourceID = imageResourceID;
     }
 
-    public static final Juice[] mySongs = {
+    public static final Juice[] gbgr = {
+            new Juice( "Fall", "GBGR", R.drawable.gbgr),
+            new Juice( "Lean Wit Me [v2]", "GBGR", R.drawable.drfl),
+    };
+
+    public static final Juice[] wod = {
             new Juice("Diners", "WOD", R.drawable.wod),
-            new Juice( "Cha-Ching", "DRFL", R.drawable.drfl),
+            new Juice("Friends Die", "WOD", R.drawable.wod),
 
     };
+
+    public static final Juice[] drfl = {
+            new Juice( "Cha-Ching", "DRFL", R.drawable.drfl),
+            new Juice( "KTM Drip", "DRFL", R.drawable.drfl),
+
+    };
+    public static final Juice[] jw = {
+            new Juice( "Rain Dance", "JW3", R.drawable.juice),
+            new Juice( "On Time", "JW3", R.drawable.juice),
+    };
+
+
+
 
 
     // the toString method is called automatically whenever the Food object is

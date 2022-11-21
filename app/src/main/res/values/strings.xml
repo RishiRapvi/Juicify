@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Juicify</string>
+
+    <string-array name="options">
+        <item>Goodbye &amp; Good Riddance</item>
+        <item>WRLD On Drugs</item>
+        <item>Death Race For Love</item>
+        <item>JW3</item>
+    </string-array>
+
 </resources>
