@@ -15,6 +15,7 @@ import com.google.firebase.auth.AuthResult;
 
 public class MainActivity extends AppCompatActivity  {
 
+    public static final String ARRAYLIST_VALUES = "";
     // xml elements
     Button logInB, signUpB;
     EditText userNameET, passwordET;
@@ -26,7 +27,7 @@ public class MainActivity extends AppCompatActivity  {
     public static FirebaseHelper firebaseHelper;
 
     // Use the same TAG all the time for Log statements. Feel free to change the value of TAG
-    public final String TAG = "Denna";
+    public final String TAG = "Rishi";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

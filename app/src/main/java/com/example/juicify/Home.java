@@ -69,4 +69,8 @@ public class Home extends AppCompatActivity {
         listView.setOnItemClickListener(itemClickListener);
 
     }
+    public void switchScreens(View view) {
+        Intent intent = new Intent(this, Options.class);
+        startActivity(intent);
+    }
 }
