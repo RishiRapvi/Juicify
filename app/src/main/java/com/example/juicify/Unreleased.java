@@ -26,7 +26,7 @@ public class Unreleased extends AppCompatActivity {
         ArrayAdapter<Juice> listAdapter = new ArrayAdapter<>(
                 this, android.R.layout.simple_list_item_1, dataToDisplay);
 
-        ListView listView = (ListView) findViewById(R.id.list_options);
+        ListView listView = (ListView) findViewById(R.id.GBGR);
         listView.setAdapter(listAdapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
