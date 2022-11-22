@@ -41,24 +41,6 @@ public class MainActivity extends AppCompatActivity  {
         passwordET = findViewById(R.id.passwordEditText);
     }
 
-    /**
-     * Method first checks if the input is valid.  If it meets the screening criteria from
-     * getValues(), then the username (which is an email) and password are sent to the FirebaseHelper
-     * class to call upon a method of Firebase auth called createUserWithEmailAndPassword
-     *
-     * This method will return a result once it is complete, and we are listening for that result
-     *
-     * No matter what, the method will complete, either successfully or not
-     * If successfully, that means the user account was created and we can now access the UID of
-     * the signed in user.
-     * After doing that we switch screens to the SelectActionActivity
-     *
-     * If unsuccessful, then we will Log that we failed, and include the exception message which will help
-     * us gain insight into WHY it didn't work.
-     *
-     * @param view
-     */
-
 
     public void signUpClicked(View view) {
         Log.i(TAG, "Sign up clicked");

@@ -16,7 +16,7 @@ public class Home extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_home);
 
         // create an OnItemClickListener (notice the O is capitalized!!!)
         // since the ListView isn't a subclass of Button, that is why we have to implement a listener
