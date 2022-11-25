@@ -19,14 +19,13 @@ public class Unreleased extends AppCompatActivity {
         setContentView(R.layout.activity_unreleased);
 
         Intent intent = getIntent();
-
-        ArrayList<Juice> dataToDisplay = intent.getParcelableArrayListExtra(MainActivity.ARRAYLIST_VALUES);
-
+        ArrayList<Juice> dataToDisplay = intent.getParcelableArrayListExtra(Home.ARRAYLIST_VALUES);
 
         ArrayAdapter<Juice> listAdapter = new ArrayAdapter<>(
                 this, android.R.layout.simple_list_item_1, dataToDisplay);
 
-        ListView listView = (ListView) findViewById(R.id.GBGR);
+        ListView listView = (ListView) findViewById(R.id.categoryOptions);
+
         listView.setAdapter(listAdapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

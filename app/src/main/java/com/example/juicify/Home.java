@@ -52,7 +52,6 @@ public class Home extends AppCompatActivity {
                     }
                 }
 
-
                 // Send this particular ArrayList of Food data to the next activity, where we display
                 // each name of each object in the ArrayList.
                 intent.putParcelableArrayListExtra(ARRAYLIST_VALUES, listData);
@@ -69,6 +68,7 @@ public class Home extends AppCompatActivity {
         listView.setOnItemClickListener(itemClickListener);
 
     }
+
     public void switchScreens(View view) {
         Intent intent = new Intent(this, Options.class);
         startActivity(intent);

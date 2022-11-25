@@ -43,7 +43,7 @@ import java.util.concurrent.Executor;
  * our other classes clean of the firebase code and also avoid having to update firebase code
  * in many places.  This is MUCH more efficient and less error prone.
  */
-public class FirebaseHelper {
+public class FirebaseHelper extends android.app.Activity{
     public final String TAG = "Denna";
     private static String uid = null;      // var will be updated for currently signed in user
     private FirebaseAuth mAuth;

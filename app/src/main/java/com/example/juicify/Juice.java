@@ -63,27 +63,43 @@ public class Juice implements Parcelable {
     }
 
     public static final Juice[] gbgr = {
+
             new Juice( "Fall", "GBGR", R.drawable.gbgr),
-            new Juice( "Lean Wit Me [v2]", "GBGR", R.drawable.drfl),
+            new Juice( "Lean Wit Me [v2]", "GBGR", R.drawable.gbgr)
     };
 
     public static final Juice[] wod = {
+
             new Juice("Diners", "WOD", R.drawable.wod),
-            new Juice("Friends Die", "WOD", R.drawable.wod),
+            new Juice("Friends Die", "WOD", R.drawable.wod)
 
     };
 
     public static final Juice[] drfl = {
+
             new Juice( "Cha-Ching", "DRFL", R.drawable.drfl),
-            new Juice( "KTM Drip", "DRFL", R.drawable.drfl),
+            new Juice( "KTM Drip", "DRFL", R.drawable.drfl)
 
     };
     public static final Juice[] jw = {
+
             new Juice( "Rain Dance", "JW3", R.drawable.juice),
-            new Juice( "On Time", "JW3", R.drawable.juice),
+            new Juice( "On Time", "JW3", R.drawable.juice)
     };
 
 
+    public static final Parcelable.Creator<Juice> juiceCreator = new Parcelable.Creator<Juice>() {
+
+        @Override
+        public Juice createFromParcel(Parcel parcel) {
+            return new Juice(parcel);
+        }
+
+        @Override
+        public Juice[] newArray(int size) {
+            return new Juice[0];
+        }
+    };
 
 
 
