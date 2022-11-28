@@ -1,12 +1,16 @@
 package com.example.juicify;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import java.io.IOException;
 
 public class Songs extends AppCompatActivity {
 
@@ -44,4 +48,22 @@ public class Songs extends AppCompatActivity {
             Log.i("Rishi", "Code not working!");
         }
     }
+
+    public void playSong(View v){
+        MediaPlayer mediaPlayer = new MediaPlayer();
+        try{
+            mediaPlayer.setDataSource("");
+            mediaPlayer.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+                @Override
+                public void onPrepared(MediaPlayer mp) {
+                    mp.start();
+                }
+            });
+            mediaPlayer.prepare();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+
 }

@@ -7,6 +7,7 @@ public class Juice implements Parcelable {
     private String song;
     private String era;
     private int imageResourceID;
+    private String songLink;
 
     public static final Parcelable.Creator<Juice> CREATOR = new
             Parcelable.Creator<Juice>() {
@@ -26,6 +27,7 @@ public class Juice implements Parcelable {
         song = parcel.readString();
         era = parcel.readString();
         imageResourceID = parcel.readInt();
+        songLink = parcel.readString();
     }
 
     @Override
@@ -33,12 +35,15 @@ public class Juice implements Parcelable {
         dest.writeString(song);
         dest.writeString(era);
         dest.writeInt(imageResourceID);
+        dest.writeString(songLink);
+
     }
 
     public Juice() {
         song = "";
         era = "";
         imageResourceID = 0;
+        songLink = "";
     }
 
     public String toString() {
@@ -50,10 +55,11 @@ public class Juice implements Parcelable {
         return 0;
     }
 
-    public Juice(String song, String era, int imageResourceID) {
+    public Juice(String song, String era, int imageResourceID, String songLink) {
         this.song = song;
         this.era = era;
         this.imageResourceID = imageResourceID;
+        this.songLink = songLink;
     }
 
     public Juice(double price, int imageResourceID) {
@@ -64,27 +70,27 @@ public class Juice implements Parcelable {
 
     public static final Juice[] gbgr = {
 
-            new Juice( "Fall", "GBGR", R.drawable.gbgr),
-            new Juice( "Lean Wit Me [v2]", "GBGR", R.drawable.gbgr)
+            new Juice( "Fall", "GBGR", R.drawable.gbgr, "gs://juicify-90105.appspot.com/Fall [v1].mp3"),
+            new Juice( "Lean Wit Me [v2]", "GBGR", R.drawable.gbgr, "gs://juicify-90105.appspot.com/Lean Wit Me [v2].mp3")
     };
 
     public static final Juice[] wod = {
 
-            new Juice("Diners", "WOD", R.drawable.wod),
-            new Juice("Friends Die", "WOD", R.drawable.wod)
+            new Juice("Diners", "WOD", R.drawable.wod, "gs://juicify-90105.appspot.com/Diners [v1].mp3"),
+            new Juice("Friends Die", "WOD", R.drawable.wod, "gs://juicify-90105.appspot.com/Friends Die.mp3")
 
     };
 
     public static final Juice[] drfl = {
 
-            new Juice( "Cha-Ching", "DRFL", R.drawable.drfl),
-            new Juice( "KTM Drip", "DRFL", R.drawable.drfl)
+            new Juice( "Cha-Ching", "DRFL", R.drawable.drfl, "gs://juicify-90105.appspot.com/Cha-Ching (Spend It All).mp3"),
+            new Juice( "KTM Drip", "DRFL", R.drawable.drfl, "gs://juicify-90105.appspot.com/KTM Drip.mp3")
 
     };
     public static final Juice[] jw = {
 
-            new Juice( "Rain Dance", "JW3", R.drawable.juice),
-            new Juice( "On Time", "JW3", R.drawable.juice)
+            new Juice( "Rain Dance", "JW3", R.drawable.juice, "gs://juicify-90105.appspot.com/Rain Dance [v1].mp3"),
+            new Juice( "On Time", "JW3", R.drawable.juice, "gs://juicify-90105.appspot.com/On Time (Righteous Pt. 2).mp3")
     };
 
 
