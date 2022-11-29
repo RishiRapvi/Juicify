@@ -52,7 +52,7 @@ public class Songs extends AppCompatActivity {
     public void playSong(View v){
         MediaPlayer mediaPlayer = new MediaPlayer();
         try{
-            mediaPlayer.setDataSource("");
+            mediaPlayer.setDataSource("gs://juicify-90105.appspot.com");
             mediaPlayer.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
                 @Override
                 public void onPrepared(MediaPlayer mp) {
