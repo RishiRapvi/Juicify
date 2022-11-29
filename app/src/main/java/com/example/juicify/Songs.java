@@ -5,6 +5,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -14,16 +15,19 @@ import java.io.IOException;
 
 public class Songs extends AppCompatActivity {
 
+    private Juice juice;
+    private Button button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_songs);
 
         Intent intent = getIntent();
+
         try {
             // This gets the particular Detailed object we are displaying
             // In this case, it is a Food object.
-            Juice juice = intent.getParcelableExtra(Unreleased.DETAIL_CHOICE);
+            juice = intent.getParcelableExtra(Unreleased.DETAIL_CHOICE);
 
             // This page will display the specific Detailed data for what your app is showing.
             // Get references to the xml views for name, price, desc, and photo
@@ -33,6 +37,7 @@ public class Songs extends AppCompatActivity {
             TextView era = findViewById(R.id.eraTextView);
             ImageView photo = findViewById(R.id.imageView);
 
+            button =  findViewById(R.id.playSong);
             // set values on the screen based on the object that was passed to this Detail activity
             song.setText(juice.getSong());
             era.setText(juice.getEra());
@@ -48,11 +53,11 @@ public class Songs extends AppCompatActivity {
             Log.i("Rishi", "Code not working!");
         }
     }
+    MediaPlayer mediaPlayer = new MediaPlayer();
 
     public void playSong(View v){
-        MediaPlayer mediaPlayer = new MediaPlayer();
         try{
-            mediaPlayer.setDataSource("https://console.firebase.google.com/u/0/project/juicify-90105/storage/juicify-90105.appspot.com/files/~2");
+            mediaPlayer.setDataSource(juice.getSongLink());
             mediaPlayer.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
                 @Override
                 public void onPrepared(MediaPlayer mp) {
@@ -63,7 +68,20 @@ public class Songs extends AppCompatActivity {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        button.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View view) {
+
+                if (mediaPlayer.isPlaying()) {
+                    mediaPlayer.pause();
+                } else {
+                    mediaPlayer.start();
+                }
+            }
+        });
     }
+
+
 
 
 }

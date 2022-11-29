@@ -137,4 +137,12 @@ public class Juice implements Parcelable {
     public void setImageResourceID(int imageResourceID) {
         this.imageResourceID = imageResourceID;
     }
+
+    public String getSongLink() {
+        return songLink;
+    }
+
+    public void setSongLink(String songLink) {
+        this.songLink = songLink;
+    }
 }
