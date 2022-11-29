@@ -52,7 +52,7 @@ public class Songs extends AppCompatActivity {
     public void playSong(View v){
         MediaPlayer mediaPlayer = new MediaPlayer();
         try{
-            mediaPlayer.setDataSource("gs://juicify-90105.appspot.com");
+            mediaPlayer.setDataSource("https://firebasestorage.googleapis.com/v0/b/juicify-90105.appspot.com/o/Cha-Ching%20(Spend%20It%20All).mp3?alt=media&token=b59b3a4d-5f37-49af-85a5-e83e00f6976b");
             mediaPlayer.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
                 @Override
                 public void onPrepared(MediaPlayer mp) {

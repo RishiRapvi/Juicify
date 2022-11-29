@@ -70,27 +70,27 @@ public class Juice implements Parcelable {
 
     public static final Juice[] gbgr = {
 
-            new Juice( "Fall", "GBGR", R.drawable.gbgr, "gs://juicify-90105.appspot.com/Fall [v1].mp3"),
-            new Juice( "Lean Wit Me [v2]", "GBGR", R.drawable.gbgr, "gs://juicify-90105.appspot.com/Lean Wit Me [v2].mp3")
+            new Juice( "Fall", "GBGR", R.drawable.gbgr, "https://firebasestorage.googleapis.com/v0/b/juicify-90105.appspot.com/o/Fall%20%5Bv1%5D.mp3?alt=media&token=27175539-4fdb-4d2e-98ea-ee22b89d2d39"),
+            new Juice( "Lean Wit Me [v2]", "GBGR", R.drawable.gbgr, "https://firebasestorage.googleapis.com/v0/b/juicify-90105.appspot.com/o/Lean%20Wit%20Me%20%5Bv2%5D.mp3?alt=media&token=d438921a-a15b-4ba2-9c09-3b69c5b94b60")
     };
 
     public static final Juice[] wod = {
 
-            new Juice("Diners", "WOD", R.drawable.wod, "gs://juicify-90105.appspot.com/Diners [v1].mp3"),
-            new Juice("Friends Die", "WOD", R.drawable.wod, "gs://juicify-90105.appspot.com/Friends Die.mp3")
+            new Juice("Diners", "WOD", R.drawable.wod, "https://firebasestorage.googleapis.com/v0/b/juicify-90105.appspot.com/o/Diners%20%5Bv1%5D.mp3?alt=media&token=a0741220-31b3-4745-9e04-5269a9afed53"),
+            new Juice("Friends Die", "WOD", R.drawable.wod, "https://firebasestorage.googleapis.com/v0/b/juicify-90105.appspot.com/o/Friends%20Die.mp3?alt=media&token=c7d3a44e-ed55-4428-9a40-584611c3d792")
 
     };
 
     public static final Juice[] drfl = {
 
-            new Juice( "Cha-Ching", "DRFL", R.drawable.drfl, "gs://juicify-90105.appspot.com/Cha-Ching (Spend It All).mp3"),
-            new Juice( "KTM Drip", "DRFL", R.drawable.drfl, "gs://juicify-90105.appspot.com/KTM Drip.mp3")
+            new Juice( "Cha-Ching", "DRFL", R.drawable.drfl, "https://firebasestorage.googleapis.com/v0/b/juicify-90105.appspot.com/o/Cha-Ching%20(Spend%20It%20All).mp3?alt=media&token=b59b3a4d-5f37-49af-85a5-e83e00f6976b"),
+            new Juice( "KTM Drip", "DRFL", R.drawable.drfl, "https://firebasestorage.googleapis.com/v0/b/juicify-90105.appspot.com/o/KTM%20Drip.mp3?alt=media&token=cb869e80-f4ab-4f5f-a1d1-d05bfc5ec6ce")
 
     };
     public static final Juice[] jw = {
 
-            new Juice( "Rain Dance", "JW3", R.drawable.juice, "gs://juicify-90105.appspot.com/Rain Dance [v1].mp3"),
-            new Juice( "On Time", "JW3", R.drawable.juice, "gs://juicify-90105.appspot.com/On Time (Righteous Pt. 2).mp3")
+            new Juice( "Rain Dance", "JW3", R.drawable.juice, "https://firebasestorage.googleapis.com/v0/b/juicify-90105.appspot.com/o/Rain%20Dance%20%5Bv1%5D.mp3?alt=media&token=fdf9dddb-0c95-4930-8966-05a61d148f74"),
+            new Juice( "On Time", "JW3", R.drawable.juice, "https://firebasestorage.googleapis.com/v0/b/juicify-90105.appspot.com/o/On%20Time%20(Righteous%20Pt.%202).mp3?alt=media&token=95dd4132-1176-4859-a694-e542a240a514")
     };
 
 
