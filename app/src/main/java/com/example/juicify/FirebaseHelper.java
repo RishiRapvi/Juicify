@@ -34,15 +34,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.Executor;
 
-/**
- * The purpose of this class is to hold ALL the code to communicate with Firebase.  This class
- * will connect with Firebase auth and Firebase firestore.  Each class that needs to verify
- * authentication OR access data from the database will reference a variable of this class and
- * call a method of this class to handle the task.  Essentially this class is like a "gopher" that
- * will go and do whatever the other classes want or need it to do.  This allows us to keep all
- * our other classes clean of the firebase code and also avoid having to update firebase code
- * in many places.  This is MUCH more efficient and less error prone.
- */
+
 public class FirebaseHelper extends android.app.Activity{
     public final String TAG = "Denna";
     private static String uid = null;      // var will be updated for currently signed in user
