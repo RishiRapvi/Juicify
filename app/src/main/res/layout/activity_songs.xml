@@ -11,7 +11,7 @@
         android:id="@+id/songTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="153dp"
+        android:layout_marginStart="156dp"
         android:layout_marginEnd="156dp"
         android:layout_marginBottom="56dp"
         android:fontFamily="serif"
@@ -20,49 +20,74 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.105" />
+        app:layout_constraintVertical_bias="0.09" />
 
     <TextView
         android:id="@+id/eraTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="158dp"
-        android:layout_marginTop="148dp"
-        android:layout_marginEnd="156dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="158dp"
         android:fontFamily="serif"
         android:text="TextView"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="263dp"
-        android:layout_height="290dp"
+        android:layout_width="232dp"
+        android:layout_height="214dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.398"
+        app:srcCompat="@drawable/juice" />
+
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="209dp"
+        android:layout_height="27dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.963"
-        app:srcCompat="@drawable/juice" />
+        app:layout_constraintVertical_bias="0.89" />
 
     <Button
-        android:id="@+id/playSong"
-        android:layout_width="178dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="116dp"
-        android:layout_marginTop="264dp"
+        android:id="@+id/play"
+        android:layout_width="66dp"
+        android:layout_height="62dp"
+        android:background="@drawable/ic_baseline_play_arrow_24"
         android:onClick="playSong"
-        android:text="Play/Pause Song"
-        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.666" />
+
+    <Button
+        android:id="@+id/pause"
+        android:layout_width="72dp"
+        android:layout_height="69dp"
+        android:background="@drawable/ic_baseline_pause_24"
+        android:onClick="pauseSong"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.663" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
