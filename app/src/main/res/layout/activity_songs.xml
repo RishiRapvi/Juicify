@@ -9,8 +9,8 @@
 
     <TextView
         android:id="@+id/songTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="116dp"
+        android:layout_height="34dp"
         android:layout_marginStart="153dp"
         android:layout_marginEnd="156dp"
         android:layout_marginBottom="56dp"
@@ -20,24 +20,24 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.105" />
+        app:layout_constraintVertical_bias="0.099" />
 
     <TextView
         android:id="@+id/eraTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="158dp"
-        android:layout_marginTop="148dp"
+        android:layout_marginTop="144dp"
         android:layout_marginEnd="156dp"
         android:fontFamily="serif"
         android:text="TextView"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -49,17 +49,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.963"
+        app:layout_constraintVertical_bias="0.498"
         app:srcCompat="@drawable/juice" />
 
     <Button
         android:id="@+id/playSong"
-        android:layout_width="178dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="116dp"
-        android:layout_marginTop="264dp"
+        android:layout_width="113dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="560dp"
+        android:background="@drawable/playpause"
+        android:contentDescription="@string/app_name"
         android:onClick="playSong"
-        android:text="Play/Pause Song"
         android:textColor="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
