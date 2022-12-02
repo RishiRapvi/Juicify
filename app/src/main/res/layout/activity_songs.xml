@@ -29,7 +29,7 @@
         android:id="@+id/eraTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="158dp"
+        android:layout_marginStart="154dp"
         android:layout_marginTop="144dp"
         android:layout_marginEnd="156dp"
         android:fontFamily="serif"
@@ -37,7 +37,7 @@
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -54,16 +54,18 @@
 
     <Button
         android:id="@+id/playSong"
-        android:layout_width="113dp"
-        android:layout_height="109dp"
-        android:layout_marginStart="148dp"
-        android:layout_marginTop="560dp"
+        android:layout_width="128dp"
+        android:layout_height="124dp"
         android:background="@drawable/playpause"
         android:contentDescription="@string/app_name"
         android:onClick="playSong"
         android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.889" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
