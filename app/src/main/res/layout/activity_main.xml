@@ -27,7 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Password:"
+        android:hint="password"
         android:inputType="textPassword"
         android:minHeight="48dp"
         android:textColor="#FFFFFF"
@@ -44,7 +44,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Username:"
+        android:hint="username"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:textColor="#FFFFFF"
@@ -58,29 +58,31 @@
 
     <Button
         android:id="@+id/logInButton"
-        android:layout_width="120dp"
-        android:layout_height="50dp"
-        android:text="Login"
-        android:textColor="#000000"
+        android:layout_width="115dp"
+        android:layout_height="48dp"
+        android:background="@drawable/roundedbutton"
         android:onClick="logInClicked"
+        android:text="Log In"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.646" />
+        app:layout_constraintVertical_bias="0.621" />
 
     <Button
         android:id="@+id/signUpButton"
-        android:layout_width="121dp"
-        android:layout_height="50dp"
-        android:text="Sign Up"
+        android:layout_width="115dp"
+        android:layout_height="48dp"
+        android:background="@drawable/roundedbutton"
         android:onClick="signUpClicked"
-        android:textColor="#000000"
+        android:text="Sign Up"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.775" />
+        app:layout_constraintVertical_bias="0.737" />
 </androidx.constraintlayout.widget.ConstraintLayout>
