@@ -58,31 +58,31 @@
 
     <Button
         android:id="@+id/logInButton"
-        android:layout_width="115dp"
-        android:layout_height="48dp"
-        android:background="@drawable/roundedbutton"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="@drawable/blackbutton"
         android:onClick="logInClicked"
         android:text="Log In"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.621" />
+        app:layout_constraintVertical_bias="0.772" />
 
     <Button
         android:id="@+id/signUpButton"
-        android:layout_width="115dp"
-        android:layout_height="48dp"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
         android:background="@drawable/roundedbutton"
         android:onClick="signUpClicked"
         android:text="Sign Up"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.737" />
+        app:layout_constraintVertical_bias="0.846" />
 </androidx.constraintlayout.widget.ConstraintLayout>
