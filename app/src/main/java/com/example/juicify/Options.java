@@ -15,7 +15,9 @@ public class Options extends AppCompatActivity {
         setContentView(R.layout.activity_options);
     }
     public void Logout(View view) {
-        this.finishAffinity();
+        moveTaskToBack(true);
+        android.os.Process.killProcess(android.os.Process.myPid());
+        System.exit(1);
     }
 
 
