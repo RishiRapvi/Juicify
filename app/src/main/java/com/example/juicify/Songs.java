@@ -1,9 +1,15 @@
 package com.example.juicify;
 
+import static android.content.ContentValues.TAG;
+
+import android.app.ActivityManager;
+import android.content.ComponentName;
+import android.content.Context;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -55,8 +61,8 @@ public class Songs extends AppCompatActivity {
     }
     MediaPlayer mediaPlayer = new MediaPlayer();
 
-    public void playSong(View v){
-        try{
+    public void playSong(View v) {
+        try {
             mediaPlayer.setDataSource(juice.getSongLink());
             mediaPlayer.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
                 @Override
@@ -76,12 +82,11 @@ public class Songs extends AppCompatActivity {
                     mediaPlayer.pause();
                 } else {
                     mediaPlayer.start();
+                    mediaPlayer.setVolume(2, 2);
                 }
+
             }
         });
+
     }
-
-
-
-
 }

@@ -28,7 +28,7 @@
         android:layout_height="40dp"
         android:background="@drawable/blackbutton"
         android:onClick="Logout"
-        android:text="Log Out"
+        android:text="Exit App"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
