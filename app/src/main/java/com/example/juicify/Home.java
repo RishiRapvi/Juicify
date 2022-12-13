@@ -33,21 +33,21 @@ public class Home extends AppCompatActivity {
                 // In this particular app, everything is centralized around the Food class.
                 ArrayList<Juice> listData = new ArrayList<>();
 
-                // the choices for the menu on MainActivity coincide with the values in arr in strings.xml file
-                if (position == 0) {                    // they chose breakfast
-                    for (Juice f : Juice.gbgr) {      // add all the elements for this array to the arraylist
+
+                if (position == 0) {
+                    for (Juice f : Juice.gbgr) {
                         listData.add(f);
                     }
                 } else if (position == 1) {
-                    for (Juice f : Juice.wod) {        // they chose lunch
+                    for (Juice f : Juice.wod) {
                         listData.add(f);
                     }
                 } else if (position == 2) {
-                    for (Juice f : Juice.drfl) {        // they chose dinner
+                    for (Juice f : Juice.drfl) {
                         listData.add(f);
                     }
                 } else if (position == 3) {
-                    for (Juice f : Juice.jw) {        // they chose dinner
+                    for (Juice f : Juice.jw) {
                         listData.add(f);
                     }
                 }
